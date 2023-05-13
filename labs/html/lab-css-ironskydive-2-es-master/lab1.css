@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+/*colors*/
+:root{
+    --blue: #1e90ff;
+    --darkblue: #152638;
+    --textcolor: #fafafa;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {font-family:"Roboto condensed"; 
+    font-size: 10 px;
+    line-height: 3.5em;
+    font-weight: 300;
+}
+h1 {font-size: 6em;
+text-align: center;
+text-transform: uppercase
+}
+h2 {font-size: 4.5em;
+text-align: center;
+text-transform: uppercase;
+line-height: 4em;}
+h3 {font-size: 4.2em;
+text-align: center;
+line-height: 1em;}
+h4 {font-size: 1.5em;
+letter-spacing: 0.4px;
+line-height: 1em;}
+h5 {font-size: 1.2em;
+line-height: 1em;}
+
+.nav-bar { 
+    background: var(--darkblue);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-bar ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 4rem;
+}
+
+.nav-bar ul > li {
+    list-style-type: none;
+}
+.nav-bar ul > li > a {
+    color:white;
+    text-decoration: none;
+    font-size: 1em;
+}
+.nav-bar ul > li > a:hover {
+    color: red
+}
+
+header {
+    background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+header h2 {
+    color: white;
+    text-shadow:black 8px -20px 9px;}
+header aside {
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 30px;
+}
+/*section1*/
+#general-info {
+    background-color: var(--darkblue);
+    height: 450px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content:center;
+    align-items: center;
+}
+#general-info article {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 50%;
+
+}
+#general-info article > p {
+    margin: 1rem 0rem 2rem 0rem;
+    width: 50%;
+    font-weight: 300;
+}
+#general-info article > a {
+    color: white;
+    text-decoration: none;
+    background: var(--blue);
+    padding: 1rem;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+}
+
+/*section2*/
+
+#structure {
+    padding: 4rem 0;
+    font-size: 1em;
+    text-align: center;
+
+
+}
+#structure > div {
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#structure > div article {
+    border: 1px solid var(--darkblue);
+    width: 50%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    margin: 50px;
+    font-size: 20px;
+    box-shadow: grey 1px 1px 1px;
+}
+#structure >div > article p {
+    font-size: 15px;
+    word-spacing: 0.5px;
+}
+
+#structure div article img {
+    height: 135px;
+    padding-bottom: 1rem;
+}
+
+/*section3*/
+
+#team {
+    background-color: #152638;
+    padding: 4rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#team article {
+    padding: 3rem;
+    
+}
+
+.img {
+    width: 25%;
+}
+#team p { 
+ margin: 1rem 0rem 1rem 0rem;
+
+}
+
+   
+ .teamimg { 
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+ }
+ /*section4*/
+ #schedule {
+    padding: 4rem;
+ }
+ .horario-info {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+ }
+ #schedule table {
+    width: 60%;
+ }
+    
+ #schedule form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+#schedule form div label {
+    padding: 1rem;
+}
+
+#schedule form div input {
+    width: 50%;
+}
+#schedule form input[type="submit"] {
+    margin-top: 1rem;
+    background-color: #fafafa;
+    padding: 0.3rem;
+}
+ /*contact*/ 
+ #contact {
+    background-color: #152638;
+    color: #fafafa;
+    text-align: left;
+    padding: 4rem;
+ }
+
